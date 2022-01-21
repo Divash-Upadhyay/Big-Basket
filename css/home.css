@@ -15,11 +15,12 @@ img {
 /* Slideshow container */
 
 .slideshow-container {
+    margin-top: 500px;
   max-width: 99%;
   /* height: 200px; */
   position: relative;
   margin: auto;
-  border: 1px solid transparent;
+  border: 1px solid red;
   z-index: -1;
 }
 
