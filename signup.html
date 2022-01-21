@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create An Account</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<style>
+    body{
+        background-color: wheat;
+    }
+    #main{
+        border: black solid 1px;
+        width: 480px;
+        margin-left: 35%;
+        text-align: center;
+        vertical-align: top;
+        background-color: rgb(179, 236, 179);
+        margin-top: 10%;
+
+    }
+    form{
+        width: 20%;
+    }
+
+    #account{
+        /* border: 1px  solid black; */
+        width: 100%;
+        height: 120px;
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 15px;
+        text-align: center;
+        color: rgb(30, 81, 108);
+
+        
+        
+    }
+    #google{
+        width: 250px;
+        height: 50px;
+        /* border:  1px solid black; */
+        display: inline-block;
+        margin-top: 0px;
+        vertical-align: top;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    
+    
+    input{
+        width: 400px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 15%;
+    }
+    input::placeholder{
+        color: black;
+        /* font-weight: bold; */
+        /* text-align: center; */
+
+
+    }
+    #alrdy{
+        width: 100%;
+        height: 100px;
+        border: 1px solid transparent;
+    }
+    #alrdy1{
+        border: 1px solid transparent;
+        width: 480px;
+        margin: auto;
+        padding-left: 370px;
+        /* text-align: center; */
+    }
+</style>
+<body>
+ <div id="containerr"></div>
+
+    <!-- <div id="account">
+        <h1>My Account</h1>
+        <h3>Home  >  My account</h3>
+    </div> -->
+    <div id="main">
+            <div>
+                <form  onsubmit="Register(event)">
+                    <h1 style=" color: purple; margin-left: 150px; ">REGISTER</h1>
+                    <input id="name" type="text" placeholder="Enter Your Name">
+                    <input type="email" id="email" placeholder="Enter Your Email Adress">
+                    <input type="text" id="username" placeholder="Enter Your Username">
+                    <input type="password" id="password" placeholder="Enter Your Password">
+    
+                    <input type="number" id="mobile" placeholder="Enter Your Mobile Number">
+    
+                    <input type="text" id="description" placeholder="Enter Description">
+    
+                    <input style="width: 300px; background-color: palevioletred; border-radius: 10px; color: black; font-weight: bold; margin-left: 60px; " type="submit" >
+                </form>
+            </div>
+        
+        <!-- <div>
+            <form  onsubmit="login(event)">
+                <h1 style="text-align: center;">Log In</h1>
+                
+               
+                <input type="text" id="username_login">
+                <input type="password" id="password_login">
+               
+                <input style="width: 100px; background-color: orange; color: black; font-weight: bold; " type="submit">
+                
+
+            </form>
+        </div> -->
+    </div>
+    <div id="alrdy">
+        <div id="alrdy1">
+            <p style="font-size: 20px;">Already A User</p>
+            <div><a style="text-decoration: none; color: #DB7093;" href="login.html">Log In</a></div>
+        </div>
+    </div>
+
+
+
+
+    
+    
+    
+</body>
+</html>
+
+<script >
+    
+
+
+
+
+//     api_link = https://masai-api-mocker.herokuapp.com/
+//    register url = https://masai-api-mocker.herokuapp.com/auth/register
+//    login url = https://masai-api-mocker.herokuapp.com/login
+
+
+
+
+async function Register(e){
+    try{
+
+        e.preventDefault();
+    
+
+    var register_data = {
+
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+        mobile: document.getElementById("mobile").value,
+        username: document.getElementById("username").value,
+        description: document.getElementById("description").value,
+    };
+
+    register_data = JSON.stringify(register_data);
+    console.log("register_data:",register_data);
+
+
+    } catch(error){
+        console.log("error:",error);
+    }
+
+    let reg_api = `https://masai-api-mocker.herokuapp.com/auth/register`;
+
+
+    let response = await fetch(reg_api, {
+
+        method:'POST',
+
+        body:register_data,
+
+
+        headers:{
+            "Content-Type":"application/json",
+        },
+    });
+
+    let data = await response.json();
+    console.log("data:",data);
+
+
+    if(data.error===true){
+        alert("user already exist");
+    } else {
+        alert("registration successful");
+        window.location.href="./login.html"
+        
+       
+        
+    }
+
+   
+}
+</script>

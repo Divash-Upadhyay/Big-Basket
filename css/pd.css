@@ -1,0 +1,154 @@
+#dd{
+    height: 529px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+#dda{
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+    border: 1px solid transparent;
+}
+#dd1{
+    height: 460px;
+    width: 240px;
+    border: 1px solid transparent;
+    float: left;
+
+}
+#dd2{
+    height: 519px;
+    width: 950px;
+    border-left:1px solid #009966 ;
+    float: right;
+}
+.dd1a{
+    font-size: 14px;
+    line-height: 10px;
+    text-align: center;
+    color: #009966;
+}
+
+#dd2>div{
+    display: inline-block;
+    vertical-align: top;
+}
+#dd2a{
+    width: 470px;
+    border: 1px solid transparent;
+    height: 519px;
+}
+#dd2b{
+    width: 470px;
+    border: 1px solid transparent;
+    height: 519px;
+
+}
+
+#dd3{
+    margin-top: 30px;
+    width: 100%;
+    height: 278px;
+    border: 1px solid transparent;
+}
+#dd3a{
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+    border: 1px solid #E7E3E3;
+}
+.dd3b{
+    width: 100%;
+    height: 40px;
+    border: 1px solid transparent;
+    color: #444444;
+}
+.dd3c{
+    width: 100%;
+    height: 230px;
+    color: #4A4A4A;
+    text-align: center;
+}
+
+
+#ddd2{
+    border: 1px solid transparent;
+    height: 490px;
+    width: 100%;
+}
+#ddd2a{
+    border:  1px solid transparent;
+    width: 1140px;
+    height: 100%;
+    margin: auto;
+}
+#ddd2b{
+    border: 1px solid transparent;
+    height: 402px;
+    /* vertical-align: top; */
+}
+#ddd2b>div{
+    display: inline-block;
+    width: 222px;
+    height: 99%;
+    border: 1px solid #EEEEEE;
+    vertical-align: top;
+}
+.ddd2c{
+    height: 22px;
+    border: 1px solid transparent;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+.ddd2d{
+    margin: auto;
+    width: 150px;
+}
+.ddd2e{
+    height: 100px;
+    width: 200px;
+    border: 1px solid transparent;
+    margin-left: 10px;
+}
+.ddd2f{
+    
+     border: 1px solid transparent;
+     font-size: 13px;
+     text-align: center;
+     vertical-align: top;
+}
+
+#rc{
+    border: 1px solid transparent;
+    height: 340px;
+    width: 100%;
+}
+
+#rc1{
+    border: 1px solid transparent;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+#rc1a{
+    border: 1px solid transparent;
+    width: 100%;
+    height: 74px;
+   
+}
+#rc1b>div{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#indiv{
+    text-align: center;
+}
+
+

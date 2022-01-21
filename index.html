@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigBasket</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/nav.css">
+        <style>#ddd10{
+            height: 364px;
+            width: 100%;
+            border-bottom: 1px solid #DEDEDE;
+        }
+        #ddd10a{
+            height: 99%;
+            width: 1140px;
+            border: 1px solid transparent;
+            margin: auto;
+        }
+        #ddd10a>div{
+            width: 280px;
+            height: 100%;
+            border: 1px solid transparent;
+            display: inline-block;
+            vertical-align: top;
+        }
+        a{
+            text-decoration: none;
+        }
+        .ddd10b{
+            font-size: 14px;
+            color: #333333;
+            line-height: 20px;
+            text-align: left;
+        }
+        .ddd10b>p{
+            margin-bottom: 8px;
+        }
+        
+        /* last */
+        #ddd11{
+            height: 270px;
+            width: 100%;
+        }
+        #ddd11a{
+            height: 99%;
+            width: 1170px;
+            border: 1px solid transparent;
+            margin: auto;
+        }
+        #ddd11a>div{
+            display: inline-block;
+            border: 1px solid transparent;
+            vertical-align: top;
+            margin-left: 18px;
+        
+        }
+        .ddd11b{
+            height: 100%;
+            width: 180px;
+            font-size: 14px;
+            color: #6CD138;
+        }
+        .ddd11c{
+            font-size: 14px;
+            height: 100%;
+            width: 915px;
+            color: #808080;
+        }
+        .last{
+            height: 34px;
+            width: 100%;
+            background-color: #EAEAEA;
+            padding-left: 200px;
+            font-size: 12px;
+            padding-top: 5px;
+        }
+        </style>
+    
+</head>
+<div id="container"></div>
+
+<!-- slider -->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/1.jpg" style="width:100%;height:390px;">
+        <div class="text">Offer On<br>staples</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/2.jpeg" style="width:100%;height: 390px;">
+        <div class="text">Fresho<br>Meat</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="images/3.jpg" style="width:100%;height: 390px;">
+        <div class="text">StrawBerries<br>Season</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- 3rd box -->
+<div id="ddd">
+    <div id="ddd1">
+        <div>
+            <img src="images/10/11.png" alt="">
+        </div>
+        <div><img src="images/10/12.png" alt=""></div>
+        <div>
+            <img src="images/10/13.png" alt="">
+        </div>
+        <div>
+            <img src="images/10/14.png" alt="">
+        </div>
+        <div>
+            <img src="images/10/15.png" alt="">
+        </div>
+        <div>
+            <img src="images/10/16.png" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- 4th Box -->
+
+<div id="ddd2">
+    <div id="ddd2a">
+        <div style="text-align: center;border-bottom: 1px solid #888888; height: 27px;">
+            <h3 style="color: #444444;">My Smart Basket</h3>
+        </div>
+        <div id="ddd2b">
+            <div>
+                <div class="ddd2c">get 21% off</div>
+                <div class="ddd2d">
+                    <img src="images/basket1/b1.jpg" alt="">
+                </div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Capsicum-Green</p>
+                    <br>
+                    <br>    
+                    <p>500 g</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 37.37</h5>
+                    <p>Standard Delievery:Tomorrow</p>
+                    <p>9:00PM-11:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="ddd2c">Get 27% off</div>
+                <div class="ddd2d">
+                    <img src="images/basket1/b2.jpg" alt="">
+                </div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Carrot-Orange</p>
+                    <br>
+                    <br>    
+                    <p>500 g</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 49.49</h5>
+                    <p>Standard Delievery:tomorrow</p>
+                    <p>7:00PM-9:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="ddd2c">Get 37% off</div>
+                <div class="ddd2d">
+                    <img src="images/basket1/b3.jpg" alt="">
+                </div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Coriender-Leaves</p>
+                    <br>
+                    <br>    
+                    <p>100 g- Rs 4.04</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 4.04</h5>
+                    <p>Standard Delievery:tomorrow</p>
+                    <p>7:00PM-9:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="ddd2c">Get 20% off</div>
+                <div class="ddd2d"><img src="images/basket1/b4.jpg" alt=""></div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Cucumber</p>
+                    <br>
+                    <br>    
+                    <p>500g</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 11.11</h5>
+                    <p>Standard Delievery:tomorrow</p>
+                    <p>7:00PM-9:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="ddd2c">Get 48% off</div>
+                <div class="ddd2d">
+                    <img src="images/basket1/b6.jpg" alt="">
+                </div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Lady-Finger</p>
+                    <br>
+                    <br>    
+                    <p>500g</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 22.22</h5>
+                    <p>Standard Delievery:tommorrow</p>
+                    <p>7:00PM-9:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 5th Box -->
+
+<div id="ddd3">
+    <div id="ddd3a">
+        <div style="text-align: center;border-bottom: 1px solid #888888;">
+            <h3 style="color: #444444;">Bank Offers</h3>
+        </div>
+        <div id="ddd3b">
+            <div>
+                <img src="images/20/21.jpg" alt="" width="273px" height="216px">
+            </div>
+            <div>
+                <img src="images/20/22.jpg" alt="" width="273px" height="216px">
+            </div>
+            <div>
+                <img src="images/20/23.jpg" alt="" width="273px" height="216px">
+            </div>
+            <div>
+                <img src="images/20/24.jpg" alt="" width="273px" height="216px">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 6Th Box -->
+<div id="ddd2">
+    <div id="ddd2a">
+        <div style="text-align: center;border-bottom: 1px solid #888888;">
+            <h3 style="color: #444444;">Best Sellers</h3>
+        </div>
+        <div id="ddd2b">
+            <div>
+                <div class="ddd2c">get 21% off</div>
+                <div class="ddd2d">
+                    <img src="images/basket2/b1.jpg" alt="">
+                </div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Capsicum-Green</p>
+                    <br>
+                    <br>    
+                    <p>500 g</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 37.37</h5>
+                    <p>Standard Delievery:Tomorrow</p>
+                    <p>9:00PM-11:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="ddd2c">Get 27% off</div>
+                <div class="ddd2d">
+                    <img src="images/basket2/b2.jpg" alt="">
+                </div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Carrot-Orange</p>
+                    <br>
+                    <br>    
+                    <p>500 g</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 49.49</h5>
+                    <p>Standard Delievery:tomorrow</p>
+                    <p>7:00PM-9:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="ddd2c">Get 37% off</div>
+                <div class="ddd2d">
+                    <img src="images/basket2/b3.jpg" alt="">
+                </div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Coriender-Leaves</p>
+                    <br>
+                    <br>    
+                    <p>100 g- Rs 4.04</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 4.04</h5>
+                    <p>Standard Delievery:tomorrow</p>
+                    <p>7:00PM-9:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="ddd2c">Get 20% off</div>
+                <div class="ddd2d"><img src="images/basket2/b4.jpg" alt=""></div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Cucumber</p>
+                    <br>
+                    <br>    
+                    <p>500g</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 11.11</h5>
+                    <p>Standard Delievery:tomorrow</p>
+                    <p>7:00PM-9:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+            <div>
+                <div class="ddd2c">Get 48% off</div>
+                <div class="ddd2d">
+                    <img src="images/basket2/b5.jpg" alt="">
+                </div>
+                <div class="ddd2e">
+                    <p style="font-size: 10px;">Fresho</p>
+                    <p style="font-size:15px";>Lady-Finger</p>
+                    <br>
+                    <br>    
+                    <p>500g</p>
+                </div>
+                <div class="ddd2f">
+                    <h5>RS 22.22</h5>
+                    <p>Standard Delievery:tommorrow</p>
+                    <p>7:00PM-9:00PM</p>
+                    <button style="background-color: #84C225; width: 30%;">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 7th Box -->
+
+<div id="ddd4">
+    <div id="ddd4a">
+        <div style="text-align: center;border-bottom: 1px solid #888888;">
+            <h3 style="color: #444444;">Top Offers</h3>
+        </div>
+        <div id="ddd4b">
+            <div>
+                <img src="images/30/31.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/30/32.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/30/33.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/30/34.jpg" alt="" width="273px">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 8Th Box -->
+
+<div id="ddd5">
+    <div id="ddd5a">
+        <div style="text-align: center;border-bottom: 2px solid #E4E4E4;">
+            <h3 style="color: #444444;">Fruits & Vegetables</h3>
+        </div>
+        <div id="ddd5b">
+            <div>
+                <img src="images/40/41.jpg" alt=""">
+            </div>
+            <div>
+                <img src=" images/40/42.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/40/43.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/40/44.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/40/45.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 9th box -->
+
+<div id="ddd6">
+    <div id="ddd6a">
+        <div style="text-align: center;border-bottom: 2px solid #E4E4E4;">
+            <h3 style="color: #444444;">Your Daily Staples</h3>
+        </div>
+        <div id="ddd6b">
+            <div>
+                <img src="images/50/51.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/50/52.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/50/53.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/50/54.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/50/55.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/50/56.jpg" alt="" width="178px" height="133px">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 10th box -->
+
+<div id="ddd7">
+    <div id="ddd7a">
+        <div style="text-align: center;border-bottom: 2px solid #E4E4E4;">
+            <h3 style="color: #444444;">Winter Bevarages</h3>
+        </div>
+        <div id="ddd7b">
+            <div>
+                <img src="images/60/61.jpg" alt=""">
+            </div>
+            <div>
+                <img src=" images/60/62.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/60/63.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/60/64.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/60/65.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 11thbox -->
+
+
+<div id="ddd4">
+    <div id="ddd4a">
+        <div style="text-align: center;border-bottom: 1px solid #E3E3E3;">
+            <h3 style="color: #444444;">Snacks Store</h3>
+        </div>
+        <div id="ddd4b">
+            <div>
+                <img src="images/70/71.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/70/72.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/70/73.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/70/74.jpg" alt="" width="273px">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 12thbox -->
+
+
+<div id="ddd4">
+    <div id="ddd4a">
+        <div style="text-align: center;border-bottom: 1px solid #e3e3e3;">
+            <h3 style="color: #444444;">Cleaning & Households</h3>
+        </div>
+        <div id="ddd4b">
+            <div>
+                <img src="images/80/81.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/80/82.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/80/84.jpg" alt="" width="273px">
+            </div>
+            <div>
+                <img src="images/80/85.jpg" alt="" width="273px">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="ddd7">
+    <div id="ddd7a">
+        <div style="text-align: center;border-bottom: 2px solid #E4E4E4;">
+            <h3 style="color: #444444;">Beauty & Hygiene</h3>
+        </div>
+        <div id="ddd7b">
+            <div>
+                <img src="images/90/91.jpg" alt=""">
+            </div>
+            <div>
+                <img src=" images/90/92.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/90/93.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/90/94.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/90/95.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="ddd6">
+    <div id="ddd6a">
+        <div style="text-align: center;border-bottom: 2px solid #E4E4E4;">
+            <h3 style="color: #444444;">Home And Kitchen Essentials</h3>
+        </div>
+        <div id="ddd6b">
+            <div>
+                <img src="images/100/111.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/100/112.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/100/113.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/100/114.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/100/115.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/100/116.jpg" alt="" width="178px" height="133px">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider 2 -->
+<div class="slider-box">
+    <div id="slider">
+        <img src="images/120/121.jpg" alt="">
+        <img src="images/120/122.jpg" alt="">
+        <img src="images/120/123.jpg" alt="">
+        <img src="images/120/124.jpg" alt="">
+    </div>
+    <div class="indicators">
+        <span id="btn1" class="active"></span>
+        <span id="btn2"></span>
+        <span id="btn3"></span>
+        <span id="btn4"></span>
+    </div>
+</div>
+<div id="ddd6">
+    <div id="ddd6a">
+        <div style="text-align: center;border-bottom: 2px solid #E4E4E4;">
+            <h3 style="color: #444444;">Brand Store</h3>
+        </div>
+        <div id="ddd6b">
+            <div>
+                <img src="images/130/131.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/130/132.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/130/133.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/130/134.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/130/135.jpg" alt="" width="178px" height="133px">
+            </div>
+            <div>
+                <img src="images/130/136.jpg" alt="" width="178px" height="133px">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ddd8">
+    <div id="ddd8a">
+        <div style="text-align: center;border-bottom: 2px solid #E4E4E4;">
+            <h3 style="color: #444444;">Featured Reciepe</h3>
+        </div>
+        <div style="margin-top: 15px;">
+            <img src="images/detox.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!-- lines -->
+<div id="ddd9">
+    <div id="ddd9a">
+        <div style="text-align: left;">
+            <h2 style="color: #6B6868;font-size: 30px;">bigbasket-online grocery store</h2>
+            <p style="font-size: 14px;line-height: 20px;color: #6B6868;">Did you ever imagine that the freshest of fruits and vegetables, top quality pulses and food grains, dairy products and hundreds of branded items could be handpicked and delivered to your home, all at the click of a button? India’s first comprehensive online megastore, bigbasket.com, brings a whopping 20000+ products with more than 1000 brands, to over 4 million happy customers. From household cleaning products to beauty and makeup, bigbasket has everything you need for your daily needs. bigbasket.com is convenience personified We’ve taken away all the stress associated with shopping for daily essentials, and you can now order all your household products and even buy groceries online without travelling long distances or standing in serpentine queues. Add to this the convenience of finding all your requirements at one single source, along with great savings, and you will realize that bigbasket- India’s largest online supermarket, has revolutionized the way India shops for groceries. Online grocery shopping has never been easier. Need things fresh? Whether it’s fruits and vegetables or dairy and meat, we have this covered as well! Get fresh eggs, meat, fish and more online at your convenience. Hassle-free Home Delivery options</p>
+        </div>
+        <div class="ddd9b">
+            <p>We deliver to 25 cities across India and maintain excellent delivery times, ensuring that all your products from groceries to snacks branded foods reach you in time.</p>
+            <li>
+                <ol>Slotted Delivery: Pick the most convenient delivery slot to have your grocery delivered. From early morning delivery for early birds, to late-night delivery for people who work the late shift, bigbasket caters to every schedule.</ol>
+                <ol>Express Delivery: This super useful service can be availed by customers in cities like Bangalore, Mumbai, Pune, Chennai, Kolkata, Hyderabad and Delhi-NCR in which we deliver your orders to your doorstep in 90 Minutes.</ol>
+                <ol>BB Specialty stores: Missed out on buying that essential item from your favorite neighborhood store for tonight’s party? We’ll deliver it for you! From bakery, sweets and meat to flowers and chocolates, we deliver your order in 90 minutes, through a special arrangement with a nearby specialty store, verified by us.</ol>
+            </li>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div id="ftr"></div>
+
+</body>
+
+</html>
+<script src="script/home.js"></script>
+<script type="module">
+    import navbar from "./components/navabr.js";
+
+
+    let container=document.getElementById("container")
+
+    container.innerHTML=navbar();
+</script>
+<script type="module">
+    import footer from "./components/footer.js";
+
+
+    let foter=document.getElementById("ftr")
+
+    foter.innerHTML=footer();
+</script>

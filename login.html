@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+<style>
+    body {
+        background-color: wheat;
+    }
+
+    #loginhover {
+        border: 1px solid black;
+        width: 380px;
+        height: 550px;
+        margin-left: 30px;
+        vertical-align: top;
+        display: inline-block;
+        border-radius: 10px;
+        background-color: rgb(154, 231, 154);
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+
+    #username_login {
+        width: 300px;
+        height: 30px;
+        margin-left: 20px;
+    }
+
+    #password_login {
+        width: 300px;
+        height: 30px;
+        margin-left: 20px;
+
+    }
+
+    #subhover {
+        width: 300px;
+        height: 40px;
+        margin-left: 30px;
+        background-color: palevioletred;
+        font-size: 20px;
+        border-radius: 10px;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<body>
+    <div id="loginhover">
+
+        <div>
+            <form onsubmit="login(event)">
+                <h1 style="text-align: center; color: blue;">Log In</h1>
+                <br>
+                <br>
+                <a href="register.html">
+                    <h2 style="text-align: center;"> Create An Account</h2>
+                </a>
+                <br>
+
+                <label style="margin-left: 20px; font-size: 20px;">Enter Your Username</label>
+                <input type="text" id="username_login">
+                <br>
+                <br>
+                <br>
+                <label style="margin-left: 20px; font-size: 20px;">Enter Your Password</label>
+                <input type="password" id="password_login">
+                <br>
+                <br>
+                <br>
+                <h3 style="text-align: center;">Forget Your Password ?</h3>
+                <br>
+
+                <input id="subhover" type="submit">
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    async function login(e) {
+        
+            e.preventDefault();
+
+            let login_data = {
+
+                username: document.getElementById("username_login").value,
+                password: document.getElementById("password_login").value,
+            };
+        
+
+            login_data = JSON.stringify(login_data)
+            console.log("login_data:", login_data)
+
+            
+         
+    
+
+
+
+            let login_url = `https://masai-api-mocker.herokuapp.com/auth/login
+`
+
+            let response = await fetch(login_url, {
+
+                method: 'POST',
+
+                body: login_data,
+
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+
+            let data = await response.json();
+            console.log("data:", data);
+
+            let username = document.getElementById("username_login").value;
+
+            getUser(username, data.token);
+        }
+
+
+
+    async function getUser(username, token) {
+        let api = `https://masai-api-mocker.herokuapp.com/user/${username}`;
+
+        let response = await fetch(api, {
+
+            headers: {
+
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`,
+
+            },
+
+
+        });
+
+        let data = await response.json();
+        console.log("data:", data);
+
+        if (data.error === true) {
+            alert("Invalid Username or Password");
+           
+        } else {
+           
+            alert("Login Successfull");
+            window.location.href = "./index.html"
+        }
+    }
+</script>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="css/ftr.css"> -->
+        <style>
+            body,
+                html {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                #mainbox {
+                    border: 1px solid transparent;
+                    width: 100%;
+                    height: 133px;
+                    background-color: #FFFFFF;
+                    position: sticky;
+                    top: 0;
+                }
+                
+                .box1 {
+                    border: 1px solid transparent;
+                    height: 30px;
+                    width: 1140px;
+                    margin: auto;
+                    vertical-align: top;
+                    /* display: inline-block; */
+                    text-align: right;
+                }
+                
+                .box1>div {
+                    border: 1px solid transparent;
+                    display: inline-block;
+                    height: 28px;
+                    vertical-align: top;
+                    margin-bottom: 10px;
+                    text-align: right;
+                    margin-right: 20px;
+                }
+                
+                .b1p {
+                    color: #666666;
+                }
+                
+                .box2 {
+                    border: 1px solid transparent;
+                    height: 60.2px;
+                    width: 1140px;
+                    margin: auto;
+                }
+                
+                .box2>div {
+                    border: 1px solid transparent;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                #itag i{
+                    position: absolute;
+                    top: 52px;
+                    right: 587px;
+                    width: 28px;
+                    height: 29px;
+                    color: white;
+                    padding: 6px;
+                    background-color: #6CA516;
+                
+                }
+                
+                #img {
+                    padding-bottom: 30px;
+                    /* margin-bottom: 300px; */
+                    margin-top: -50px;
+                    
+                }
+                
+                #srch {
+                    margin-top: 20px;
+                    height: 30px;
+                    width: 532.7px;
+                }
+                
+                .bskt {
+                    background-color: #f2f2f2;
+                    height: 58.2px;
+                    width: 137px;
+                    float: right;
+                    padding-left: 5px;
+                    text-align: center;
+                    color: #DA251D;
+                    /* padding: 10px 0px; */
+                }
+                
+                #ee1 {
+                    border: 1px solid red;
+                    width: 198px;
+                    height: 210px;
+                    visibility: hidden;
+                    position: absolute;
+                    right: 220px;
+                    background-color: #FFFFFF;
+                
+                }
+                
+                #ee1>div {
+                    border-top: 1px dotted #444444;
+                    text-align: left;
+                    padding: 5px 10px 5px 10px;
+                    font-size: 13px;
+                }
+                
+                .b1p:hover {
+                    background-color: #DA251D;
+                    color: #FFFFFF;
+                }
+                
+                .b1p:hover #ee1 {
+                    visibility: visible;
+                    color: #444444;
+                }
+                
+                #box3 {
+                    border: 1px solid #888888;
+                    height: 38px;
+                    width: 1140px;
+                    margin: auto;
+                }
+                
+                #box3>div {
+                    display: inline-block;
+                }
+                
+                .shop {
+                    width: 245px;
+                    background-color: #84C225;
+                    height: 38px;
+                    text-align: left;
+                    font-size: 15px;
+                    font-family: ProximaNovaA-Regular;
+                    font-weight: bold;
+                    vertical-align: top;
+                    color: #FFFFFF;
+                }
+                #shp{
+                    padding: 10px 30px;
+                }
+                
+                .offers {
+                    width: 103px;
+                    height: 38px;
+                    color: #72A020;
+                    text-align: center;
+                    font-size: 14px;
+                    /* padding: 10px 0; */
+                }
+                
+                .offers:hover {
+                    background-color: #72A020;
+                    color: #FFFFFF;
+                
+                }
+                
+                .spec {
+                    width: 143px;
+                    height: 38px;
+                    color: #72A020;
+                    text-align: center;
+                    font-size: 14px;
+                    vertical-align: top;
+                    /* padding: 10px 0; */
+                }
+                
+                .spec:hover {
+                    background-color: #72A020;
+                    color: #FFFFFF;
+                }
+                
+                #ff2 {
+                    border: 1px solid rebeccapurple;
+                    width: 1140px;
+                    height: 400px;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 130px;
+                    background-color: #FFFFFF;
+                    vertical-align: top;
+                    left: 189px;
+                }
+                
+                .shop:hover #ff2 {
+                    visibility: visible;
+                    color: black;
+                }
+                
+                #ff2>div {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                
+                .in1 {
+                    border: 1px solid transparent;
+                    width: 240px;
+                    height: 99%;
+                }
+                .in1>div{
+                    border-bottom: 1px solid #F2F2F2;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    color: #444444;
+                    line-height: 20px;
+                }
+                .in2{ 
+                    border: 1px solid transparent;
+                    width: 230px;
+                    height: 99%;
+                    background-color: #E8E8E8;
+                }
+                .in2>div{
+                    margin-bottom: 10px;
+                    color: #444444;
+                    font-size: 14px;
+                }
+                .in3{
+                    border: 1px solid transparent;
+                    width: 220px;
+                    height: 99%;
+                }
+                .in3>div{
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    color: #444444;
+                }
+                .in4{
+                    border: 1px solid transparent;
+                    width: 235px;
+                    height: 98%;
+                }
+                .in4>div{
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                    color: #444444;
+                }
+                .in5{
+                    border: 1px solid transparent;
+                }</style>
+
+</head>
+
+<body>
+    <div id="mainbox">
+        <div class="box1">
+            <div>
+                <div class="b1p"><i class="fas fa-phone-alt"></i> 1860 123 1000</div>
+            </div>
+            <div>
+                <div class="b1p"><i class="fas fa-map-marker-alt"></i>560004,Banglore</div>
+            </div>
+            <div>
+                <div class="b1p">log in<i class="fas fa-chevron-down"></i>
+                    <div id="ee1">
+                        <div><a style="text-decoration: none; color: #444444;" href="signup.html">My Account</a></div>
+                        <div><a style="text-decoration: none; color: #444444;" href="cart.html">My Basket</a></div>
+                        <div>My Orders</div>
+                        <div>My Membership</div>
+                        <div>Wallet</div>
+                        <div>Ask Us</div>
+                        <div>Customer Service</div>
+                        <div>Log Out</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div id="img">
+                <a href="index.html"><img height="150px" width="200px" src="images/BigBasket-Logo.jpg" ></a>
+            </div>
+            <div id="itag">
+                <input id="srch" type="search" placeholder="Search for Products.."><i class="fas fa-search fa-1x"></i>
+            </div>
+            <div class="bskt">
+                <p><a style="text-decoration: none; color: #DA251D;" href="cart.html"><i class="fas fa-shopping-basket fa-2x"></i>My Basket</a></p>
+            </div>
+    
+        </div>
+        <div id="box3">
+            <div class="shop">
+                <div id="shp">SHOP BY CATEGORY <i class="fas fa-chevron-down"></i>
+                    <div id="ff2">
+                        <div class="in1">
+                            <div><a href="products.html">Fruits & Vegeatables</a></div>
+                            <div>Foodgrains,Oil & Masala</div>
+                            <div>Bakery,Cakes & Dairy</div>
+                            <div>Beverages</div>
+                            <div>Snacks & Branded Food</div>
+                            <div>Beauty & Hygiene</div>
+                            <div>Cleaning & Household</div>
+                            <div>Kitchen,Garden & Pets</div>
+                            <div>Eggs,Meats & Fish</div>
+                            <div>Gourmet & World Food</div>
+                            <div>Baby Care</div>
+                            <div>View All</div>
+                        </div>
+                        <div class="in2">
+                            <div>Fresh Vegetables</div>
+                            <div>Herbs & Seasoning</div>
+                            <div>Fresh Fruits</div>
+                            <div>Organic Fruits And Vegetables</div>
+                            <div>Cuts & Sprouts</div>
+                            <div>Exotic Fruits & Veggies</div>
+                            <div>Flower Bouquets,Bunches</div>
+                        </div>
+                        <div class="in3">
+                            <div>Potato Oninon & Tomato</div>
+                            <div>Cucumber & Capsicum</div>
+                            <div>Leafy Vegetables</div>
+                            <div>Root Vegetables</div>
+                            <div>Beans,Brinjals & Okra</div>
+                            <div>Cabbage & Cauliflower</div>
+                            <div>Gourd,Pumppkin,Drumstick</div>
+                            <div>Speciality</div>
+                        </div>
+                        <div class="in4">
+                            <div>
+                                <h5 style="color: #6CD138;">Popular Searches</h5>
+                            </div>
+                            <div>Vegetables</div>
+                            <div>Onion</div>
+                            <div>Tomato</div>
+                            <div>Beans</div>
+                            <div>Carrot</div>
+                            <div>Vegetable</div>
+                            <div>
+                                <img src="/images/img2.jpg" alt="" height="198px">
+                            </div>
+                        </div>
+                        <div class="in5">
+                            <div>
+                                <img src="/images/img3.jpg" alt="" height="397px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offers">
+                <p><i class="fas fa-thumbtack"></i>OFFERS</p>
+            </div>
+            <div class="spec">
+                <p><i class="fas fa-warehouse"></i>BB SPECIALITY</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- slider -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/slide/11.jpg" style="width:100%;height:336px;">
+            <div class="text">Fresh<br>Fruits</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/slide/12.jpg" style="width:100%;height: 336px;">
+            <div class="text">Fresh<br>Veggies</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="images/slide/13.jpg" style="width:100%;height: 336px;">
+            <div class="text">Fresh<br>Leafy</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- 2nd box -->
+    <div id="aa">
+        <div class="aa1">
+            <img src="images/21.jpg" alt="" height="76px">
+        </div>
+    </div>
+
+    <!-- side bar -->
+
+    <div id="bb">
+        <div id="bb1">
+            <!-- sidebar -->
+            <div id="sdbr">
+                <div>
+                    <p>Category</p>
+                    <div class="bb2">
+                        <p style="text-align: left;color: chocolate;">Fruits And Vegetables</p>
+                        <p>Cuts & Sprouts</p>
+                        <p>Flowers,Bouquets,Bunches</p>
+                        <p>Fresh Fruits</p>
+                        <p>Fresh Vegetables</p>
+                        <p>Herbs & Seasoning</p>
+                        <p>Organic Fruits & Vegetables</p>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <div class="bb3">
+                        <div>
+                            <p>sort by Price</p>
+                            <select id="Sort_by_price" class="sort" onchange="SearchByPrice() ">
+                                <option value="">Sort By Price</option>
+                                <option value="low">Sort by Low to High Price</option>
+                                <option value="high">Sort by High to Low Price</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div>
+                    <p>Sort By Type</p>
+                    <select id="Sort_by_type" onchange="SearchBytype() ">
+                        <option value="">Sort By Type</option>
+                        <option value="low">Fruits</option>
+                        <option value="high">Vegetables</option>
+                    </select>
+
+
+                </div>
+                <hr>
+                <div>
+                    <p>Country of Origin</p>
+                    <form>
+                        <label><input type="checkbox">Australia</label>
+                        <br>
+                        <label><input type="checkbox">Greece</label>
+                        <br>
+                        <label><input type="checkbox">India</label>
+                        <br>
+                        <label><input type="checkbox">Italy</label>
+                        <br>
+                        <label><input type="checkbox">South Africa</label>
+                        <br>
+                        <label><input type="checkbox">Thailand</label>
+                        <br>
+                        <label><input type="checkbox">Iran</label>
+                        <br>
+                        <label><input type="checkbox">USA</label>
+                        <br>
+                        <label><input type="checkbox">Egypt</label>
+                        <br>
+                        <label><input type="checkbox">Peru</label>
+                        <br>
+                        <label><input type="checkbox">New Zealand</label>
+                        <br>
+                        <label><input type="checkbox">Turkey</label>
+                        <br>
+                        <label><input type="checkbox">Chile</label>
+                    </form>
+                </div>
+                <hr>
+                <div>
+                    <p>Price</p>
+                    <form>
+                        <label><input type="checkbox">Less Than Rs 20</label>
+                        <br>
+                        <label><input type="checkbox">Rs 21 to Rs 50</label>
+                        <br>
+                        <label><input type="checkbox">Rs 51 to Rs 100</label>
+                        <br>
+                        <label><input type="checkbox">Rs 101 to Rs 200</label>
+                        <br>
+                        <label><input type="checkbox">Rs 201 to Rs 500</label>
+                        <br>
+                        <label><input type="checkbox">More than Rs 501</label>
+                    </form>
+                </div>
+                <div>
+                    <p>Discount</p>
+                    <form>
+                        <label><input type="checkbox">15% - 25% (299)</label>
+                        <br>
+                        <label><input type="checkbox">More than 25%</label>
+                    </form>
+                </div>
+                <div>
+                    <p>Pack Size</p>
+                    <form>
+                        <input type="search" placeholder="Search By Pack Size">
+                        <br>
+                        <label><input type="checkbox">100 to 150 gm</label>
+                        <br>
+                        <label><input type="checkbox">70 to 100 gm</label>
+                        <br>
+                        <label><input type="checkbox">1 Pc(Approx 500g-1Kg</label>
+                        <br>
+                        <label><input type="checkbox">1 pack(Approx. 180g-200g</label>
+                        <br>
+                        <label><input type="checkbox">1 pc</label>
+                        <br>
+                        <label><input type="checkbox">1 pc 300-500g</label>
+                    </form>
+                </div>
+            </div>
+            <!-- product -->
+            <div id="prdct">
+                <div class="prdct1">
+                    <p>Fruits & Vegetables</p>
+                </div>
+                <div class="prdct2">
+                    <p><i class="fas fa-truck"></i>All Products</p>
+                </div>
+                <div class="prdct3">
+                    <div id="product"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- last Div -->
+    <div id="lst">
+        <div id="lst1">
+            <p style="font-size: 16px; color: #6E6F72;">Related Searches</p>
+            <p style="font-size: 14px; color: #818285;">Mangoes Online Fruit Baskets International Fruits and Vegetables
+                Online Fresh Fruits Fresh Fruits Fresh
+                Vegetables Fresh Vegetables Leafy Vegetables Leafy Vegetables Organic Fruits and Vegetables</p>
+        </div>
+        <div id="lst2">
+            <p style="font-size: 16px; color: #6E6F72;">Buy Fruits and Vegetables Online</p>
+            <p style="font-size: 14px; color: #818285;">While fresh vegetables should be a part of your everyday meals,
+                some vegetables are hard to find even in the
+                huge supermarkets in your area. However, the luxury of online shopping offers customers the comfort of
+                relishing these veggies by ordering them from the comfort of their home. While beetroot, amlas, green
+                peas,
+                broccoli can easily be found in the market, bigbasket makes grocery shopping easier for you with their
+                fresh
+                produce delivered in top class packages right at your doorstep. With their wide delivery network,
+                geographical barriers are easily overcome in more than 25 major cities, thereby giving you the benefit
+                of
+                fresh fruits and vegetables every time.</p>
+            <br>
+            <p style="font-size: 16px; color: #6E6F72;">Buy Fruits and Vegetables Online</p>
+            <p style="font-size: 14px; color: #818285;">
+                The 2021 season of mangoes is here, shop for juicy mangoes online from bigbasket. Learn which months are
+                mango
+                season in India using this infographic.
+                What if we could show a little love for mangoes, by planting one of its seeds? Learn how to grow mango
+                tree from
+                seed.
+                Fruits and vegetables form the base of everybody’s daily food consumption. However, not everyone has
+                access to
+                fresh and healthy vegetables and fruits due to various reasons. Starting from farming methods that
+                involve
+                toxicants to storage systems and logistics, many sellers land up with rotten raw foods or foods exposed
+                to
+                chemicals and other radicals. Bigbasket has now turned the scene around with its online shopping store,
+                where
+                you can have fresh potato, tomato, carrots, onions and everything else on your grocery list, delivered
+                to your
+                doorstep, even without stepping out of your house. Apart from your regular local produce, you can also
+                shop for
+                other seasonal produces such as asparagus, broccoli, drumstick, white onion and more on bigbasket’s
+                online
+                store. Packaging plays a vital role in up keeping the freshness of your fruits and vegetables. Green
+                leafy
+                vegetables are prone to spoilage easily if not handled properly. While ordering online in bigbasket,
+                worries
+                about packaging and hygiene can be kept at bay. Be it your lettuce, cauliflower or any green vegetable,
+                the
+                packaging standard is specific and of high quality. You can find a whole wide range of vegetables such
+                as red
+                cabbage, drumstick leaves and different exotic ones as well on bigbasket. Apart from quality, we also
+                believe in
+                making fresh foods available to all and thus, you can find very nominal pricing while shopping online
+                with us.
+                Comapre the onion price or potato price with anywhere else in the market, and you will understand what
+                we are
+                talking about. Quality is uncompromised regardless of the type of delivery that you choose, standard or
+                express.
+                The produce delivered to you will be as fresh as directly cultivated from the farms resulting in high
+                levels of
+                nutrition. You no more have to walk through aisles of piled up produce and spend time carefully picking
+                out each
+                vegetable or fruit from them. We will take care of the entire process for you. We at bigbasket,
+                cautiously pick
+                your produce, meticulously clean them and pack them using the best packaging material available before
+                delivering them to you. Shop for your vegetables and fruits online now from the comfort of your couch
+                and have
+                your order delivered to your doorstep within a stipulated time. Look out for great deals, offers and
+                value packs
+                while shopping online with us. Save time, money and efforts, by completing your routine grocery shopping
+                on </p>
+            <br>
+            <p style="font-size: 16px; color: #6E6F72;">Freshness- the promise of quality</p>
+            <p style="font-size: 14px; color: #818285;">
+                The freshness of the produce being delivered to you is unquestionable, even in the case of standard
+                delivery. Veggies like banana stem and banana flower, which are used in exotic dishes, are fresh and
+                readily
+                available to buy online at bigbasket. Vegetables like mushrooms and sprouts, which are prone to quick
+                spoilage are also packed with utmost care using the best materials. Variety of vegetables such as button
+                mushrooms, raw banana and yellow zucchini are also available. With the demand for organic produce
+                continuously rising, bigbasket has made them readily accessible. You can shop for organic bananas online
+                on
+                the site too. All these fruits and vegitables are brought from verified and reputed vendors, giving no
+                room
+                to worry about quality. Striving to sustain the nutritive benefits of the vegetables and fruits,
+                bigbasket
+                takes its packaging very seriously and abides by a very strict packing standard. With a whole lot of
+                groceries to shop for and the luxury of at-home shopping, bigbasket brings convenience to your grocery
+                shopping experience with regard to time, delivery, cost and quality. bigbasket offers a range of
+                prominent
+                products that are well received by customers. “Zespri” is one such well-known brand that is available to
+                shop for online. For those looking out for organic products only, bigbasket stocks products by TVS
+                Organic
+                too. Make bigbasket your prime choice to buy fruits and vegetables online.</p>
+            <br>
+            <p style="font-size: 16px; color: #6E6F72;"> Delivery in Major Cities</p>
+            <p style="font-size: 14px; color: #818285;">We at bigbasket choose our produce with as much care as you do.
+                Carefully sorted, meticulously cleaned and
+                carefully packed, fruits and vegetables from our online store reach you the day you order them.
+                bigbasket
+                offers delivery in Chennai, delivery in Delhi and most other major cities in India.
+                Choose from cuts and sprouts, fresh herbs and seasonings
+                do away with the hassle of soaking and sprouting grains, or preparing vegetables and fruits for
+                consumption.
+                At bigbasket, we offer crunchy sprouts and organic produce too! Save the time and effort you spend in
+                cutting and cleaning by choosing from our basket of pre-prepared fruits and vegetables. Just toss the
+                prepared vegetables into your wok for a refreshing and healthy meal in a jiffy!
+            </p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="ftr"></div>
+</body>
+
+</html>
+<script src="script/products.js"></script>
+

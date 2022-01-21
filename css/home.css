@@ -1,0 +1,510 @@
+/* COPYRIGHT- CODING WITH NICK*/
+* {
+    box-sizing: border-box
+}
+body {
+    font-family: Verdana, sans-serif; margin:0
+}
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 99%;
+  /* height: 200px; */
+  position: relative;
+  margin: auto;
+  border: 1px solid red;
+  z-index: -1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* third Box */
+
+#ddd{
+    margin-top: 5px;
+    border: 1px solid transparent;
+    height: 71px;
+    width: 100%;
+}
+#ddd1{
+    width: 79%;
+    margin: auto;
+    height: 70px;
+    border: 1px solid transparent;
+}
+#ddd1>div{
+    display: inline-block;
+    margin-left: 4px;
+}
+
+/* 4th Box */
+
+#ddd2{
+    margin-top: 50px;
+    border: 1px solid transparent;
+    height: 490px;
+    width: 100%;
+}
+#ddd2a{
+    margin-top: 20px;
+    border:  1px solid transparent;
+    width: 1140px;
+    height: 100%;
+    margin: auto;
+}
+#ddd2b{
+    margin-top: 20px;
+    border: 1px solid transparent;
+    height: 402px;
+    /* vertical-align: top; */
+}
+#ddd2b>div{
+    display: inline-block;
+    width: 222px;
+    height: 99%;
+    border: 1px solid #E3E3E3;
+    vertical-align: top;
+}
+.ddd2c{
+    height: 22px;
+    border: 1px solid transparent;
+    text-align: right;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+.ddd2d{
+    margin: auto;
+    width: 150px;
+}
+.ddd2e{
+    height: 100px;
+    width: 200px;
+    border: 1px solid transparent;
+    margin-left: 10px;
+}
+.ddd2f{
+    width: 194px;
+    margin: auto;
+    background-color: #E1E1E1;
+    height: 89px;
+     border: 1px solid black;
+     font-size: 13px;
+     text-align: center;
+     vertical-align: top;
+}
+
+/* 5th Box */
+
+#ddd3{
+    border: 1px solid transparent;
+    height: 295px;
+    width: 100%;
+
+}
+#ddd3a{
+    border: 1px solid transparent;
+    width: 1130px;
+    margin: auto;
+
+}
+#ddd3b{
+    height: 216px;
+    width: 100%;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+#ddd3b>div{
+    display: inline-block;
+    margin-left: 3px;
+}
+
+/* 7th box */
+
+#ddd4{
+    border: 1px solid transparent;
+    height: 300px;
+    width: 100%;
+}
+#ddd4a{
+    border: 1px solid transparent;
+    width: 1140px;
+    margin: auto;
+    height: 294px;
+}
+#ddd4b>div{
+    display: inline-block;
+    border: 1px solid #E1E1E1;
+    margin-left: 4px;
+    margin-top: 15px;
+}
+
+#ddd4b>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* 8th box */
+
+#ddd5{
+    height: 470px;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+#ddd5a{
+    height: 100%;
+    width: 1140px;
+    margin: auto;
+    border: 1px solid transparent;
+}
+#ddd5b{
+    display: grid;
+    grid-template-areas: "a a b c"
+                         "a a d e";
+    /* height: 400px; */
+    /* width: 1130px; */
+    
+    
+}
+#ddd5b>div{
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 273px;
+    height: 172px;
+    border: 1px solid #f2f2f2;
+}
+#ddd5b>div:nth-child(1){
+    grid-area: a;
+}
+#ddd5b>div:nth-child(2){
+    grid-area: b;
+    margin-left: 190px;
+}
+#ddd5b>div:nth-child(3){
+    grid-area: c;
+    /* margin-left: 100px; */
+}
+#ddd5b>div:nth-child(4){
+    grid-area: d;
+    margin-left: 190px;
+}
+#ddd5b>div:nth-child(5){
+    grid-area: e;
+}
+
+/* 9th Box */
+
+#ddd6{
+    border: 1px solid transparent;
+    height: 225px;
+    width: 100%;
+}
+#ddd6a{
+    border: 1px solid transparent;
+    height: 100%;
+    width: 1130px;
+    margin: auto;
+}
+#ddd6b>div{
+    display: inline-block;
+    border: 1px solid #E1E1E1;
+    margin-top: 15px;
+    margin-left: 3px;
+}
+#ddd6b>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* 10th box */
+
+#ddd7{
+    height: 470px;
+    border: 1px solid transparent;
+    width: 100%;
+}
+
+#ddd7a{
+    height: 100%;
+    width: 1140px;
+    margin: auto;
+    border: 1px solid transparent;
+}
+#ddd7b{
+    display: grid;
+    grid-template-areas: "a a b c"
+                         "a a d e";
+    /* height: 400px; */
+    /* width: 1130px; */
+    
+    
+}
+#ddd7b>div{
+    margin-left: 5px;
+    margin-top: 15px;
+    width: 273px;
+    height: 172px;
+    border: 1px solid #f2f2f2;
+}
+#ddd7b>div:nth-child(1){
+    grid-area: a;
+}
+#ddd7b>div:nth-child(2){
+    grid-area: b;
+    margin-left: 190px;
+}
+#ddd7b>div:nth-child(3){
+    grid-area: c;
+    /* margin-left: 100px; */
+}
+#ddd7b>div:nth-child(4){
+    grid-area: d;
+    margin-left: 190px;
+}
+#ddd7b>div:nth-child(5){
+    grid-area: e;
+}
+
+
+/* scnd slider */
+* {
+    margin : 0;
+    padding: 0;
+}
+
+/* body {
+    background: #00BCD4;
+} */
+
+.slider-box {
+    width     : 90%;
+    max-height: 90vh;
+    position  : relative;
+    overflow  : hidden;
+    margin    : 30px auto;
+    z-index: -1;
+}
+
+#slider {
+    width     : 100%;
+    display   : inline-flex;
+    transition: 0.7s;
+}
+
+#slider img {
+    width: 100%;
+}
+
+.indicators {
+    position : absolute;
+    left     : 50%;
+    bottom   : 20px;
+    transform: translateX(-50%);
+}
+
+.indicators span {
+    display      : inline-block;
+    width        : 15px;
+    height       : 15px;
+    border-radius: 50%;
+    background   : rgba(255, 255, 255, 0.5);
+    cursor       : pointer;
+}
+
+.active {
+    background: #ffff !important;
+}
+
+
+#ddd8{
+    height: 480px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+#ddd8a{
+    width: 1140px;
+    height: 99%;
+    margin: auto;
+}
+
+/* lines */
+
+#ddd9{
+    height: 428px;
+    width: 100%;
+    border: 1px solid transparent;
+}
+#ddd9a{
+    margin: auto;
+    width: 1140px;
+    height: 99%;
+    border: 1px solid #8B8888;
+}
+.ddd9b{
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B6868;
+}
+
+
+/* footer */
+
+#ddd10{
+    height: 364px;
+    width: 100%;
+    border-bottom: 1px solid #DEDEDE;
+}
+#ddd10a{
+    height: 99%;
+    width: 1140px;
+    border: 1px solid transparent;
+    margin: auto;
+}
+#ddd10a>div{
+    width: 280px;
+    height: 100%;
+    border: 1px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+}
+a{
+    text-decoration: none;
+}
+.ddd10b{
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+    text-align: left;
+}
+.ddd10b>p{
+    margin-bottom: 8px;
+}
+
+/* last */
+#ddd11{
+    height: 270px;
+    width: 100%;
+}
+#ddd11a{
+    height: 99%;
+    width: 1170px;
+    border: 1px solid transparent;
+    margin: auto;
+}
+#ddd11a>div{
+    display: inline-block;
+    border: 1px solid transparent;
+    vertical-align: top;
+    margin-left: 18px;
+
+}
+.ddd11b{
+    height: 100%;
+    width: 180px;
+    font-size: 14px;
+    color: #6CD138;
+}
+.ddd11c{
+    font-size: 14px;
+    height: 100%;
+    width: 915px;
+    color: #808080;
+}
+.last{
+    height: 34px;
+    width: 100%;
+    background-color: #EAEAEA;
+    padding-left: 200px;
+    font-size: 12px;
+    padding-top: 5px;
+}
